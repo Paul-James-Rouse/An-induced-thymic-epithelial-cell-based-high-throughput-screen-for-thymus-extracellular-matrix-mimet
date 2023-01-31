@@ -4,9 +4,9 @@ library(RColorBrewer)
 library(rstatix)
 
 #### Hard coded Variables ####
-Data.location <- "~/Win7/Desktop/Upload to github/" # add location of input csv files
+Data.location <- "" # add location of input csv files
 
-Graph.Output.location <- "~/Win7/Desktop/Upload to github/" # add location of output graphs
+Graph.Output.location <- "" # add location of output graphs
 
 Samples <- c("iTEC", "Murine TEC", "Human TEC")
 
