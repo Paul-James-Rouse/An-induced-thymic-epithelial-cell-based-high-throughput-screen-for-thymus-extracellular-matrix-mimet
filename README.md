@@ -1,4 +1,10 @@
-Session Info
+Hello,
+
+This is all the data and code for the figures in the above publication. 
+
+The files are labeled by the associated figure number. Each figure has the R code and the relevent csv files. 
+
+Here is the session info the last time I ran everything. 
 
 > sessionInfo()
 R version 4.0.2 (2020-06-22)
