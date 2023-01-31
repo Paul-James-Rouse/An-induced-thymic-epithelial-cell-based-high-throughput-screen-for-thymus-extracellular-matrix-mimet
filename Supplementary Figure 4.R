@@ -3,9 +3,9 @@ library(ggplot2)
 library(RColorBrewer)
 
 #### Hard Coded Variables ####
-Data.location <- "~/Win7/Desktop/Upload to github/" # add location of input csv files
+Data.location <- "" # add location of input csv files
 
-Graph.Output.location <- "~/Win7/Desktop/Upload to github/" # add location of output graphs
+Graph.Output.location <- "" # add location of output graphs
 
 Levels <- c("Gel","98", "111", "258", "287", "309", "316", "327", "361", "394", "396", "398", 
             "427", "481", "509", "519", "520", "529", "531", "551", "563", "369")
@@ -22,8 +22,7 @@ Data.Normalised$Polymer <- factor(Data.Normalised$Polymer, levels = Levels)
 # Cell Count Box plot
 ggplot(Data.NotNormalised, aes(x = Polymer, y = Cell.Count)) +
   
-  theme(plot.title = element_text(size = 10, family="Arial", color="Black",
-                                  hjust = 0, lineheight = 1.2),
+  theme(plot.title = element_text(size = 10, family="Arial", color="Black", hjust = 0, lineheight = 1.2),
         axis.title.x = element_text(vjust = 3, size = 10, family="Arial"),
         axis.title.y = element_text(vjust = 0, size = 10, family="Arial"), 
         axis.text.x = element_text(size = 8, angle = 60, vjust = 0.75, family="Arial"),
@@ -53,8 +52,7 @@ ggsave(filename = "Supplementary Figure 4 Un-normalised.tiff", device = "tiff",
 # Unnormalised Box plot by replicate
 ggplot(Data.NotNormalised, aes(x = Replicate, y = Cell.Count)) +
   
-  theme(plot.title = element_text(size = 10, family="Arial", color="Black", hjust = 0,
-                                  lineheight = 1.2),
+  theme(plot.title = element_text(size = 10, family="Arial", color="Black", hjust = 0, lineheight = 1.2),
         axis.title.x = element_text(vjust = 3, size = 10, family="Arial"),
         axis.title.y = element_text(vjust = 0, size = 10, family="Arial"),
         axis.text.x = element_text(size = 8, angle = 60, vjust = 0.75, family="Arial"),
@@ -81,8 +79,7 @@ ggsave(filename = "Supplementary Figure 4 Un-normalised by replicate.tiff", devi
 # Normalised Box plot by replicate
 ggplot(Data.Normalised, aes(x = Replicate, y = Normalised.Counts)) +
   
-  theme(plot.title = element_text(size = 10, family="Arial", color="Black", hjust = 0,
-                                  lineheight = 1.2),
+  theme(plot.title = element_text(size = 10, family="Arial", color="Black", hjust = 0, lineheight = 1.2),
         axis.title.x = element_text(vjust = 3, size = 10, family="Arial"),
         axis.title.y = element_text(vjust = 0, size = 10, family="Arial"),
         axis.text.x = element_text(size = 8, angle = 60, vjust = 0.75, family="Arial"),
