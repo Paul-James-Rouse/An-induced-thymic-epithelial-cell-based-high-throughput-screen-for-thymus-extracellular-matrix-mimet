@@ -2,7 +2,7 @@
 library(ggplot2)
 library(RColorBrewer)
 
-#### Hard coded Variables ####
+#### Hard Coded Variables ####
 Data.location <- "" # add location for input csv
 
 Graph.Output.location <- "" # add location for output csv
@@ -59,12 +59,7 @@ for (i in 1:length(Genes)) {
     geom_point(aes(fill = Sample), size = 1, shape = 21, stroke = 0.25) +
     labs(title = Genes[i], y = "Relative Expression", x = "Cell Type") 
   
-  ggsave(filename = paste0(Genes[i], ".tiff"),
-         device = "tiff",
-         path = Graph.Output.location,
-         width = 75, 
-         height = 59.9392,
-         units = "mm",
-         dpi = 2400)
-  
+  ggsave(filename = paste0(Genes[i], ".tiff"), device = "tiff",
+         path = Graph.Output.location, width = 75, height = 59.9392,
+         units = "mm", dpi = 2400) 
 }
