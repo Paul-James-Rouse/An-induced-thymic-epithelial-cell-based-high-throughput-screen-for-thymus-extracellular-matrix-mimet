@@ -9,7 +9,7 @@ Graph.Output.location <- "" # add location for output csv
 
 
 #### Load in csv file ####
-input.csv <- read.csv(file = paste0(Data.location, list.files(path = Data.location, pattern = "Supplementary Figure 2")))
+input.csv <- read.csv(file = paste0(Data.location, "Supplementary Figure 2.csv"))
 
 #### Data Transformation #### 
 # Make Sample a factor
