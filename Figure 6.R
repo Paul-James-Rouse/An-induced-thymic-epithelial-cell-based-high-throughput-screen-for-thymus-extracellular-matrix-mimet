@@ -5,9 +5,9 @@ library(rstatix)
 library(scales)
 
 #### Hard Coded Variables ####
-Data.location <- "~/Win7/Desktop/Upload to github/" # add location of input csv files
+Data.location <- "" # add location of input csv files
 
-Graph.Output.location <- "~/Win7/Desktop/Upload to github/" # add location of output graphs
+Graph.Output.location <- "" # add location of output graphs
 
 #### Load in csv file ####
 # Load in the data
@@ -197,5 +197,4 @@ for (i in 1:length(Genes.of.interest)) {
     print(paste0(Genes.of.interest[i], "FAILED Varience tests"))
     
   }
-  
 }
