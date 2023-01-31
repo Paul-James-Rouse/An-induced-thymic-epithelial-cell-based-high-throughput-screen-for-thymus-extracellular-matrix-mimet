@@ -15,7 +15,6 @@ Files_Names <- c("Figure 3 iTEC.csv", "Figure 3 Murine TEC.csv", "Figure 3 Human
 Levels <- c("Gel","98", "111", "258", "287", "309", "316", "327", "361", "394", "396",
             "398", "427", "481", "509", "519", "520", "529", "531", "551", "563", "369")
 
-# Load in the data
 Data <- vector("list")
 
 #### Load in csv files ####
