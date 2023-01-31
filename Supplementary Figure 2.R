@@ -3,9 +3,9 @@ library(ggplot2)
 library(RColorBrewer)
 
 #### Hard coded Variables ####
-Data.location <- "~/Win7/Desktop/Upload to github/"
+Data.location <- "" # add location for input csv
 
-Graph.Output.location <- "~/Win7/Desktop/Upload to github/"
+Graph.Output.location <- "" # add location for output csv
 
 
 #### Load in csv file ####
