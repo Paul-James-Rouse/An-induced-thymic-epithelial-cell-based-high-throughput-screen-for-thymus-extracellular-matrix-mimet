@@ -2,7 +2,8 @@
 Code and Datasets for "An induced thymic epithelial cell-based high throughput screen for thymus extracellular matrix mimetics" published in EJI in 2023
 
 
-> sessionInfo(package = NULL)
+"> sessionInfo(package = NULL)"
+
 R version 4.0.2 (2020-06-22)
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 Running under: Windows 10 x64 (build 19044)
